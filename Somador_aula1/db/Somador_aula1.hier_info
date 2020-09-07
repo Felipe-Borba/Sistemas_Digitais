@@ -1,0 +1,73 @@
+|Somador_aula1
+A[0] => somador_completo:SC0.a
+A[1] => somador_completo:SC1.a
+A[2] => somador_completo:SC2.a
+A[3] => somador_completo:SC3.a
+B[0] => somador_completo:SC0.b
+B[1] => somador_completo:SC1.b
+B[2] => somador_completo:SC2.b
+B[3] => somador_completo:SC3.b
+cin => somador_completo:SC0.cin
+S[0] <= somador_completo:SC0.s
+S[1] <= somador_completo:SC1.s
+S[2] <= somador_completo:SC2.s
+S[3] <= somador_completo:SC3.s
+cout <= somador_completo:SC3.cout
+
+
+|Somador_aula1|somador_completo:SC0
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_aula1|somador_completo:SC1
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_aula1|somador_completo:SC2
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Somador_aula1|somador_completo:SC3
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

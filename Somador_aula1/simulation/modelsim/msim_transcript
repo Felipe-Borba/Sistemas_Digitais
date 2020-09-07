@@ -1,0 +1,100 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do Somador_aula1_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Somador_aula1.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity Somador_aula1
+# -- Compiling architecture structure of Somador_aula1
+# 
+vsim work.somador_aula1
+# vsim work.somador_aula1 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.somador_aula1(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+add wave -position insertpoint  \
+sim:/somador_aula1/A \
+sim:/somador_aula1/B \
+sim:/somador_aula1/cin \
+sim:/somador_aula1/S \
+sim:/somador_aula1/cout
+do dofile.do
+# Cannot open macro file: dofile.do
+do dofile
+run 160 ns
+do simulacao.do
+add wave -position insertpoint  \
+sim:/somador_aula1/A \
+sim:/somador_aula1/B \
+sim:/somador_aula1/cin \
+sim:/somador_aula1/S \
+sim:/somador_aula1/cout
+restart -f
+# Load canceled
+vsim -sdftyp /=D:/Git_Desktop_Files/Sistemas_Digitais/Somador_aula1/simulation/modelsim/Somador_aula1_vhd.sdo work.somador_aula1
+# vsim -sdftyp /=D:/Git_Desktop_Files/Sistemas_Digitais/Somador_aula1/simulation/modelsim/Somador_aula1_vhd.sdo work.somador_aula1 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.somador_aula1(structure)
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading instances from D:/Git_Desktop_Files/Sistemas_Digitais/Somador_aula1/simulation/modelsim/Somador_aula1_vhd.sdo
+# Loading timing data from D:/Git_Desktop_Files/Sistemas_Digitais/Somador_aula1/simulation/modelsim/Somador_aula1_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /somador_aula1 File: Somador_aula1.vho
+add wave -position insertpoint  \
+sim:/somador_aula1/A \
+sim:/somador_aula1/B \
+sim:/somador_aula1/cin \
+sim:/somador_aula1/S
+do simulacao.do
+run 160 ns
+add wave -position insertpoint  \
+sim:/somador_aula1/cout
+do simulacao.do
+run 160 ns
+do simulacao.do
+restart -f
+# Loading instances from D:/Git_Desktop_Files/Sistemas_Digitais/Somador_aula1/simulation/modelsim/Somador_aula1_vhd.sdo
+# Loading timing data from D:/Git_Desktop_Files/Sistemas_Digitais/Somador_aula1/simulation/modelsim/Somador_aula1_vhd.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /somador_aula1 File: Somador_aula1.vho
+do simulacao.do
+run 160 ns

@@ -2,8 +2,8 @@ library IEEE;
 use IEEE.Std_Logic_1164.all;
 
 entity Decodificador7SEG is
-	port (C: in std_logic_vector(3 downto 0);
-			F: out std_logic_vector(6 downto 0)
+	port (C: in std_logic_vector(3 downto 0); -- C = D C B A
+			F: out std_logic_vector(6 downto 0) -- F = g f e d c b a
 			);
 end Decodificador7SEG;
 
@@ -27,4 +27,3 @@ F <= "1000000" when C = "0000" else --0
 	  "0001110" when C = "1111" else --F
 	  "1111111";
 end comportamento;
-

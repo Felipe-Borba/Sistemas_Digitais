@@ -1,0 +1,190 @@
+|Aula2
+A[0] => Somador_nbits:SNB1.A[0]
+A[0] => Somador_nbits:SNB2.A[0]
+A[1] => Somador_nbits:SNB1.A[1]
+A[1] => Somador_nbits:SNB2.A[1]
+A[2] => Somador_nbits:SNB1.A[2]
+A[2] => Somador_nbits:SNB2.A[2]
+A[3] => Somador_nbits:SNB1.A[3]
+A[3] => Somador_nbits:SNB2.A[3]
+B[0] => Somador_nbits:SNB1.B[0]
+B[0] => Somador_nbits:SNB2.B[0]
+B[1] => Somador_nbits:SNB1.B[1]
+B[1] => Somador_nbits:SNB2.B[1]
+B[2] => Somador_nbits:SNB1.B[2]
+B[2] => Somador_nbits:SNB2.B[2]
+B[3] => Somador_nbits:SNB1.B[3]
+B[3] => Somador_nbits:SNB2.B[3]
+upcode => mux:MX.sel
+S[0] <= mux:MX.saida[0]
+S[1] <= mux:MX.saida[1]
+S[2] <= mux:MX.saida[2]
+S[3] <= mux:MX.saida[3]
+flag <= flag.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Aula2|Somador_nbits:SNB1
+A[0] => somador_completo:SC:0:SCi.a
+A[1] => somador_completo:SC:1:SCi.a
+A[2] => somador_completo:SC:2:SCi.a
+A[3] => somador_completo:SC:3:SCi.a
+B[0] => somador_completo:SC:0:SCi.b
+B[1] => somador_completo:SC:1:SCi.b
+B[2] => somador_completo:SC:2:SCi.b
+B[3] => somador_completo:SC:3:SCi.b
+cin => somador_completo:SC:0:SCi.cin
+S[0] <= somador_completo:SC:0:SCi.s
+S[1] <= somador_completo:SC:1:SCi.s
+S[2] <= somador_completo:SC:2:SCi.s
+S[3] <= somador_completo:SC:3:SCi.s
+cout <= somador_completo:SC:3:SCi.cout
+
+
+|Aula2|Somador_nbits:SNB1|somador_completo:\SC:0:SCi
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Aula2|Somador_nbits:SNB1|somador_completo:\SC:1:SCi
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Aula2|Somador_nbits:SNB1|somador_completo:\SC:2:SCi
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Aula2|Somador_nbits:SNB1|somador_completo:\SC:3:SCi
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Aula2|Somador_nbits:SNB2
+A[0] => somador_completo:SC:0:SCi.a
+A[1] => somador_completo:SC:1:SCi.a
+A[2] => somador_completo:SC:2:SCi.a
+A[3] => somador_completo:SC:3:SCi.a
+B[0] => somador_completo:SC:0:SCi.b
+B[1] => somador_completo:SC:1:SCi.b
+B[2] => somador_completo:SC:2:SCi.b
+B[3] => somador_completo:SC:3:SCi.b
+cin => somador_completo:SC:0:SCi.cin
+S[0] <= somador_completo:SC:0:SCi.s
+S[1] <= somador_completo:SC:1:SCi.s
+S[2] <= somador_completo:SC:2:SCi.s
+S[3] <= somador_completo:SC:3:SCi.s
+cout <= somador_completo:SC:3:SCi.cout
+
+
+|Aula2|Somador_nbits:SNB2|somador_completo:\SC:0:SCi
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Aula2|Somador_nbits:SNB2|somador_completo:\SC:1:SCi
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Aula2|Somador_nbits:SNB2|somador_completo:\SC:2:SCi
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Aula2|Somador_nbits:SNB2|somador_completo:\SC:3:SCi
+a => s.IN0
+a => cout.IN0
+a => cout.IN0
+b => s.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Aula2|mux:MX
+X[0] => saida.DATAB
+X[1] => saida.DATAB
+X[2] => saida.DATAB
+X[3] => saida.DATAB
+Y[0] => saida.DATAA
+Y[1] => saida.DATAA
+Y[2] => saida.DATAA
+Y[3] => saida.DATAA
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+sel => saida.OUTPUTSELECT
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

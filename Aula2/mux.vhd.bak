@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.Std_Logic_1164.all;
+use IEEE.std_logic_unsigned.all; -- necessário para o +
+
+entity mux is
+port (w: in std_logic_vector(6 downto 0);
+		x: in std_logic_vector(6 downto 0);
+		y: in std_logic_vector(6 downto 0);
+		z: in std_logic_vector(6 downto 0);
+		sel: in std_logic_vector(1 downto 0);
+		saida: out std_logic_vector(6 downto 0)
+		);
+end mux;
+architecture circuito of mux is
+begin
+saida <= w when sel = "00" else
+			x when sel = "01" else
+			y when sel = "10" else
+			z;
+end circuito;

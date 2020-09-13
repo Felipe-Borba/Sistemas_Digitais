@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Sep 12 22:15:09 2020
+Analysis & Synthesis Status : Successful - Sun Sep 13 17:51:33 2020
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : ULA
 Top-level Entity Name : ULA
 Family : Cyclone II
-Total logic elements : 28
-    Total combinational functions : 28
+Total logic elements : 26
+    Total combinational functions : 26
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 15

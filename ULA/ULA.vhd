@@ -14,7 +14,7 @@ end ULA;
 architecture comportamento of ULA is
 signal K1: std_logic_vector(n-1 downto 0);
 begin
-	K1 <= (others => '1') when A < B else 
+	K1 <= (0 => '1', others => '0') when A < B else 
 			(others => '0');
 			
 	saida <= (A + B) when sel = "000" else

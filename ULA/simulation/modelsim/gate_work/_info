@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dD:\Git_Desktop_Files\Sistemas_Digitais\ULA\simulation\modelsim
 Eula
-Z1 w1599959723
+Z1 w1600029756
 Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
 Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 Oi3I0k`LZ6YG;P<IP9P3W1
 Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
@@ -21,7 +21,7 @@ V1=13Am>`F:1<L<E1jh;Yn1
 Z11 OV;C;10.1d;51
 31
 !i10b 1
-Z12 !s108 1599959820.144000
+Z12 !s108 1600029772.365000
 Z13 !s90 -reportprogress|300|-93|-work|work|ULA.vho|
 Z14 !s107 ULA.vho|
 Z15 o-93 -work work -O0
@@ -34,10 +34,10 @@ R5
 R6
 R7
 DEx4 work 3 ula 0 22 1=13Am>`F:1<L<E1jh;Yn1
-l113
+l111
 L61
-VM]FjfCM5Kn12UeE]_e[>a3
-!s100 RGcKG;X6Pj_??;gPCHBfg0
+VcX?Fk;7fUf<YAEOH4hBIW0
+!s100 zK4^Im=GRd6oCUQL=iJah1
 R11
 31
 !i10b 1

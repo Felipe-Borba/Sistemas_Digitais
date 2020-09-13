@@ -45,30 +45,7 @@ add wave -position end  sim:/ula/saida
 force -freeze sim:/ula/A 0000 0
 force -freeze sim:/ula/B 0001 0
 force -freeze sim:/ula/sel 101 0
-run 15 ns
-force -freeze sim:/ula/B 0000 0
+run
 force -freeze sim:/ula/A 0001 0
-run 15 ns
 force -freeze sim:/ula/B 0000 0
-force -freeze sim:/ula/A 0000 0
-run 15 ns
-force -freeze sim:/ula/sel 100 0
-run 15 ns
-force -freeze sim:/ula/A 0010 0
-force -freeze sim:/ula/sel 010 0
-run 15 ns
-force -freeze sim:/ula/B 0001 0
-force -freeze sim:/ula/sel 011 0
-run 10 ns
-force -freeze sim:/ula/B 0010 0
-run 10 ns
-force -freeze sim:/ula/A 0000 0
-run 15 ns
-force -freeze sim:/ula/sel 000 0
-run 10 ns
-force -freeze sim:/ula/A 0001 0
-run 10 ns
-force -freeze sim:/ula/sel 001 0
-run 10 ns
-force -freeze sim:/ula/A 0111 0
-run 10 ns
+run

@@ -1,0 +1,74 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do ULA_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {ULA.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity ULA
+# -- Compiling architecture structure of ULA
+# 
+vsim work.ula
+# vsim work.ula 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.ula(structure)
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+add wave -position end  sim:/ula/A
+add wave -position end  sim:/ula/B
+add wave -position end  sim:/ula/sel
+add wave -position end  sim:/ula/saida
+force -freeze sim:/ula/A 0000 0
+force -freeze sim:/ula/B 0001 0
+force -freeze sim:/ula/sel 101 0
+run 15 ns
+force -freeze sim:/ula/B 0000 0
+force -freeze sim:/ula/A 0001 0
+run 15 ns
+force -freeze sim:/ula/B 0000 0
+force -freeze sim:/ula/A 0000 0
+run 15 ns
+force -freeze sim:/ula/sel 100 0
+run 15 ns
+force -freeze sim:/ula/A 0010 0
+force -freeze sim:/ula/sel 010 0
+run 15 ns
+force -freeze sim:/ula/B 0001 0
+force -freeze sim:/ula/sel 011 0
+run 10 ns
+force -freeze sim:/ula/B 0010 0
+run 10 ns
+force -freeze sim:/ula/A 0000 0
+run 15 ns
+force -freeze sim:/ula/sel 000 0
+run 10 ns
+force -freeze sim:/ula/A 0001 0
+run 10 ns
+force -freeze sim:/ula/sel 001 0
+run 10 ns
+force -freeze sim:/ula/A 0111 0
+run 10 ns

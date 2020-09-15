@@ -1,2 +1,0 @@
-Isso é um teste com os arquivos minimos para abrir o projeto, 
-para saber como configurar o git ignore

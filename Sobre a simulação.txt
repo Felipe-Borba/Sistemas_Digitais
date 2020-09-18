@@ -1,0 +1,8 @@
+para carregar o arquivo de atraso da fpga vc tem que ter compilado o timequest
+depois na janela da simulação clique em simulate>start simulate>SDF e não esquece de celecionar o projeto em desing
+
+para carregar o arquivo.do
+abra o dofile
+digite no terminalzin ali em baixo:
+VSIM 4> do "nome".do 
+VSIM 4> run "tempo" ns
